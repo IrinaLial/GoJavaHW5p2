@@ -29,8 +29,8 @@ public class Play4 extends Play3 {
             @Override
             public void handle ( MouseEvent event ) {
                 getLabel ( ).setText ( "" );
-                for ( int i = 0 ; i < getPlaylist ( ).length ; i++ ) {
-                    getLabel ( ).setText ( getLabel ( ).getText ( ) + "Play: " + getSongIndex ( i ) + "\n" );
+                for ( String song : getPlaylist ()) {
+                    getLabel ( ).setText ( getLabel ( ).getText ( ) + "Play: " + song + "\n" );
                 }
             }
         } );

@@ -33,6 +33,6 @@ public class Play3 extends MP3Players {
                 }
             }
         } );
-        getButton ( ).setOnMouseClicked ( event -> getLabel ( ).setText ( "Play: " + getSongIndex ( 0 ) ) );
+        getButton ( ).setOnMouseClicked ( event -> getLabel ( ).setText ( "Play: "  + getPlaylist ()[0]) );
     }
 }

@@ -1,5 +1,4 @@
 package AdditionalTask;
-
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -43,6 +42,6 @@ public class Play5 extends Play3 {
                 }
             }
         } );
-        getButton ( ).setOnMouseClicked ( event -> getLabel ( ).setText ( "Play: " + getSongIndex ( 0 ) ) );
+        getButton ( ).setOnMouseClicked ( event -> getLabel ( ).setText ( "Play: " + getPlaylist ()[0]) );
     }
 }
